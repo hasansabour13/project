@@ -1,0 +1,17 @@
+<h1>salam</h1>
+<ul>
+  <li>
+    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">home</a>
+  </li>
+  <li>
+    <a routerLink="project" routerLinkActive="active">project</a>
+  </li>
+  <li>
+    <a routerLink="profile" routerLinkActive="active" [queryParams]="{id:1}">profile1</a>
+  </li>
+  <li>
+    <a routerLink="profile" routerLinkActive="active" [queryParams]="{id:2}">profile2</a>
+  </li>
+</ul>
+<!-- <app-home></app-home> -->
+<router-outlet />

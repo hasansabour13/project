@@ -1,0 +1,26 @@
+<div class="countainer color-dark">
+<div class="cool">
+  <p>add to do task</p>
+</div>
+
+<div class="cool">
+<p>todo list  {{itemcunter}}</p><!--تعداد را نشان میدهد-->
+</div>
+
+</div>
+
+<div class="countainer color-light" [@project]="project.length">
+  <div class="cool">
+    <h2>use to list to add your list aslo to remove</h2>
+    <form >
+      <input type="text" class="text" name="project name" placeholder="please add task" [(ngModel)]="projecttext">
+      <br>
+      <input type="submit" class="btn" value="add to task" (click)="additem() ">
+    </form>
+  </div>
+
+  <div class="cool">
+    <p class="project-countainer" *ngFor="let item of project ;let i=index" (click)="removeitem(i)">{{item}}</p><!--باید به تعداد پروژه های ما تکرار بشه-->
+  </div>
+
+</div>
